@@ -7,12 +7,12 @@ public class Main {
         Scanner console = new Scanner(System.in);
         System.out.println("Enter number of task: (1 - calculator, 2 - string array)");
         int number = console.nextInt();
-        console.close();
         if (number == 1) {
             calculator();
         } else if (number == 2) {
             maxWordSearch();
         }
+        console.close();
     }
 
     public static void maxWordSearch() {
