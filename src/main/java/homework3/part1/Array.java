@@ -14,12 +14,12 @@ public class Array {
             arrayNumbers[i] = (int) Math.round((Math.random() * 20) - 10);
             System.out.print(arrayNumbers[i] + ", ");
         }
-        int maxNegative = Integer.MAX_VALUE;
+        int maxNegative = Integer.MIN_VALUE;
         int minPositive = Integer.MAX_VALUE;
         int negative = 0;
         int positive = 0;
         for (int i = 0; i < arrayNumbers.length; i++) {
-            if (arrayNumbers[i] < 0 && arrayNumbers[i] < maxNegative) {
+            if (arrayNumbers[i] < 0 && arrayNumbers[i] > maxNegative) {
                 maxNegative = arrayNumbers[i];
                 negative = i;
             }
