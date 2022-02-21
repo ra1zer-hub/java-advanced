@@ -25,6 +25,7 @@ public class Calculator {
                 result = firstNum - secondNum;
                 break;
             case "/":
+                if (secondNum == 0) throw new Exception("Деление на ноль запрещено");
                 result = firstNum / secondNum;
                 break;
             case "*":
