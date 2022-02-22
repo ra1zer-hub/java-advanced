@@ -9,7 +9,7 @@ public class Calculator {
     private double secondNum;
     private String sign;
 
-    public Calculator(double firstNum, double secondNum, String sign) {
+    public Calculator(double firstNum, String sign, double secondNum) {
         this.firstNum = firstNum;
         this.secondNum = secondNum;
         this.sign = sign;
